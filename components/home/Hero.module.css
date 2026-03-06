@@ -1,0 +1,96 @@
+.heroSection {
+    margin-top: 32px;
+    margin-bottom: 48px;
+    position: relative;
+    min-height: 360px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(16, 22, 32, 0.9) 0%, rgba(16, 22, 32, 0.4) 60%, rgba(16, 22, 32, 0) 100%), url('https://images.unsplash.com/photo-1585478259715-876a6a81fa08?auto=format&fit=crop&q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+}
+
+.heroContent {
+    padding: 48px 64px;
+    max-width: 600px;
+    position: relative;
+    z-index: 10;
+}
+
+.tagLabel {
+    display: inline-block;
+    background-color: rgba(45, 124, 255, 0.2);
+    color: var(--accent-blue);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 24px;
+    border: 1px solid rgba(45, 124, 255, 0.3);
+}
+
+.title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+}
+
+.subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 32px;
+    max-width: 80%;
+}
+
+.ctaButton {
+    background-color: var(--accent-blue);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: var(--radius-md);
+    transition: background-color 0.2s;
+}
+
+.ctaButton:hover {
+    background-color: var(--accent-blue-hover);
+}
+
+.pagination {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #FFFFFF;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .heroContent {
+        padding: 32px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,189 @@
+.dashboardContainer {
+    padding: 48px 20px;
+    min-height: 60vh;
+}
+
+.pageTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: var(--text-primary);
+}
+
+.ordersList {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 800px;
+}
+
+.orderCard {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+}
+
+.orderHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.orderMeta h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.orderDate {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.statusBadge {
+    padding: 6px 12px;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.statusBadge.pending {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: var(--accent-gold);
+}
+
+.statusBadge.cancelled_by_buyer,
+.statusBadge.cancelled_by_seller {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--accent-red);
+}
+
+.sellerInfo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.itemsList {
+    background-color: var(--bg-main);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.itemRow {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.itemRow:last-child {
+    margin-bottom: 0;
+}
+
+.orderTotal {
+    text-align: right;
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    color: var(--text-primary);
+}
+
+.orderActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.contactButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #25D366;
+    /* WhatsApp Green */
+    color: white;
+    padding: 10px 16px;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.contactButton:hover {
+    opacity: 0.9;
+}
+
+.cancelWrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.timerText {
+    font-size: 0.85rem;
+    color: var(--accent-gold);
+    font-weight: 600;
+}
+
+.cancelButton {
+    background-color: transparent;
+    color: var(--accent-red);
+    border: 1px solid var(--accent-red);
+    padding: 8px 16px;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.cancelButton:hover {
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+.lockedText {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.alertBox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--accent-red);
+    padding: 12px 16px;
+    border-radius: var(--radius-md);
+    width: 100%;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 48px;
+    background-color: var(--bg-card);
+    border-radius: var(--radius-lg);
+    color: var(--text-muted);
+}
+
+.browseButton {
+    display: inline-block;
+    margin-top: 16px;
+    background-color: var(--accent-blue);
+    color: white;
+    padding: 12px 24px;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+}

@@ -1,0 +1,143 @@
+.footer {
+    background-color: var(--bg-navbar);
+    /* Dark background matching the image */
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 64px;
+    margin-top: 64px;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    padding-bottom: 64px;
+}
+
+/* Brand area */
+.brandArea {
+    flex: 1;
+    max-width: 300px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    margin-bottom: 24px;
+}
+
+.logoIcon {
+    width: 24px;
+    height: 24px;
+    background-color: var(--accent-blue);
+    border-radius: 4px;
+    position: relative;
+}
+
+.logoIcon::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--text-primary);
+    border-radius: 2px;
+}
+
+.logoText {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+}
+
+.description {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.socials {
+    display: flex;
+    gap: 16px;
+}
+
+.socialIcon {
+    color: var(--text-muted);
+    transition: color 0.2s;
+}
+
+.socialIcon:hover {
+    color: var(--text-primary);
+}
+
+/* Links Area */
+.linksArea {
+    display: flex;
+    gap: 80px;
+}
+
+.linkColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.columnTitle {
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.footerLink {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footerLink:hover {
+    color: var(--text-primary);
+}
+
+/* Bottom Bar */
+.bottomBar {
+    border-top: 1px solid var(--border-subtle);
+    padding: 24px 0;
+}
+
+.bottomContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.localeInfo {
+    display: flex;
+    gap: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .footerContainer {
+        flex-direction: column;
+    }
+
+    .linksArea {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bottomContainer {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+}
