@@ -29,9 +29,9 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    background-color: rgba(239, 68, 68, 0.1);
-    color: var(--accent-red);
-    padding: 6px 12px;
+    background-color: #fef2f2;
+    color: #ef4444;
+    padding: 6px 14px;
     border-radius: var(--radius-full);
     font-size: 0.85rem;
     font-weight: 600;
@@ -41,10 +41,13 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    color: var(--accent-blue);
-    font-weight: 600;
+    color: #10b981;
+    font-weight: 700;
     font-size: 0.9rem;
     transition: opacity 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .seeAllButton:hover {
@@ -57,29 +60,30 @@
 }
 
 .filterTab {
-    padding: 8px 20px;
-    border-radius: var(--radius-full);
+    padding: 8px 24px;
+    border-radius: 20px;
     font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--text-muted);
-    border: 1px solid var(--border-subtle);
+    font-weight: 600;
+    color: #10b981;
+    border: 1px solid #10b981;
     transition: all 0.2s;
+    background: transparent;
+    cursor: pointer;
 }
 
 .filterTab:hover {
-    color: var(--text-primary);
-    border-color: var(--text-muted);
+    background-color: #e6fced;
 }
 
 .filterTab.activeTab {
-    background-color: transparent;
-    color: var(--accent-blue);
-    border-color: var(--accent-blue);
+    background-color: #0b4d3c;
+    color: white;
+    border-color: #0b4d3c;
 }
 
 .gridContainer {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
@@ -90,14 +94,15 @@
 }
 
 .loadMoreButton {
-    background-color: transparent;
-    border: 1px solid var(--border-subtle);
-    color: var(--text-primary);
-    padding: 12px 32px;
-    border-radius: var(--radius-md);
+    background-color: #0b4d3c;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 24px;
     font-weight: 600;
-    font-size: 0.9rem;
-    transition: all 0.2s;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
 }
 
 .loadMoreButton:hover {

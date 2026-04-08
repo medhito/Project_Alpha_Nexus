@@ -2,12 +2,12 @@
     margin-top: 32px;
     margin-bottom: 48px;
     position: relative;
-    min-height: 360px;
-    border-radius: var(--radius-lg);
+    min-height: 380px;
+    border-radius: 20px;
     overflow: hidden;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to right, rgba(16, 22, 32, 0.9) 0%, rgba(16, 22, 32, 0.4) 60%, rgba(16, 22, 32, 0) 100%), url('https://images.unsplash.com/photo-1585478259715-876a6a81fa08?auto=format&fit=crop&q=80&w=1200');
+    background-image: linear-gradient(to right, rgba(12, 40, 30, 0.95) 0%, rgba(12, 40, 30, 0.5) 60%, rgba(12, 40, 30, 0) 100%), url('https://images.unsplash.com/photo-1549931319-a545dff3bea1?auto=format&fit=crop&q=80&w=1200');
     background-size: cover;
     background-position: center;
 }
@@ -21,16 +21,16 @@
 
 .tagLabel {
     display: inline-block;
-    background-color: rgba(45, 124, 255, 0.2);
-    color: var(--accent-blue);
-    font-size: 0.75rem;
+    background-color: #0b4d3c;
+    color: #ffffff;
+    font-size: 0.70rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    padding: 6px 12px;
-    border-radius: var(--radius-sm);
+    padding: 6px 14px;
+    border-radius: 20px;
     margin-bottom: 24px;
-    border: 1px solid rgba(45, 124, 255, 0.3);
+    border: 1px solid #10b981;
 }
 
 .title {
@@ -50,17 +50,20 @@
 }
 
 .ctaButton {
-    background-color: var(--accent-blue);
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
+    background-color: #10b981;
+    color: #0d4632;
+    font-size: 0.95rem;
+    font-weight: 700;
     padding: 14px 28px;
-    border-radius: var(--radius-md);
+    border-radius: 8px;
     transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
 }
 
 .ctaButton:hover {
-    background-color: var(--accent-blue-hover);
+    background-color: #0ea5e9; /* optional distinct hover color */
+    color: white;
 }
 
 .pagination {
@@ -81,7 +84,9 @@
 }
 
 .dot.active {
-    background-color: #FFFFFF;
+    background-color: #10b981;
+    width: 20px;
+    border-radius: 4px;
 }
 
 /* Responsive adjustments */
