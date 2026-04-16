@@ -1,22 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg-main: #101620; /* Dark navy background */
-  --bg-card: #1C2434; /* Slightly lighter card bg */
-  --bg-navbar: #101620;
+  --bg-main: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-navbar: #FFFFFF;
   
-  --text-primary: #FFFFFF;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
+  --text-primary: #1C2434;
+  --text-secondary: #6F7A6D;
+  --text-muted: #828E80;
   
-  --accent-blue: #2D7CFF;
-  --accent-blue-hover: #1E66E5;
+  --accent-blue: #13EC5B;
+  --accent-blue-hover: #2C883C;
   --accent-red: #EF4444;
-  --accent-green: #10B981;
-  --accent-gold: #F59E0B;
+  --accent-green: #13EC5B;
+  --accent-gold: #FFC091;
   
-  --border-subtle: rgba(255, 255, 255, 0.1);
-  --border-focus: rgba(45, 124, 255, 0.5);
+  --primary: #13EC5B;
+  --secondary: #2C883C;
+  --tertiary: #FFC091;
+  --neutral: #6F7A6D;
+  
+  --border-subtle: #E8EBE9;
+  --border-focus: rgba(19, 236, 91, 0.5);
   
   --radius-sm: 4px;
   --radius-md: 8px;

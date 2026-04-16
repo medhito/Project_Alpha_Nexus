@@ -21,7 +21,7 @@
 
 .tagLabel {
     display: inline-block;
-    background-color: #0b4d3c;
+    background-color: var(--secondary);
     color: #ffffff;
     font-size: 0.70rem;
     font-weight: 700;
@@ -30,7 +30,7 @@
     padding: 6px 14px;
     border-radius: 20px;
     margin-bottom: 24px;
-    border: 1px solid #10b981;
+    border: 1px solid var(--primary);
 }
 
 .title {
@@ -50,8 +50,8 @@
 }
 
 .ctaButton {
-    background-color: #10b981;
-    color: #0d4632;
+    background-color: var(--primary);
+    color: var(--text-primary);
     font-size: 0.95rem;
     font-weight: 700;
     padding: 14px 28px;
@@ -62,7 +62,7 @@
 }
 
 .ctaButton:hover {
-    background-color: #0ea5e9; /* optional distinct hover color */
+    background-color: var(--secondary);
     color: white;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .dot.active {
-    background-color: #10b981;
+    background-color: var(--primary);
     width: 20px;
     border-radius: 4px;
 }

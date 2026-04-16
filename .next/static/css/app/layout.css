@@ -4,22 +4,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg-main: #101620; /* Dark navy background */
-  --bg-card: #1C2434; /* Slightly lighter card bg */
-  --bg-navbar: #101620;
+  --bg-main: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-navbar: #FFFFFF;
   
-  --text-primary: #FFFFFF;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
+  --text-primary: #1C2434;
+  --text-secondary: #6F7A6D;
+  --text-muted: #828E80;
   
-  --accent-blue: #2D7CFF;
-  --accent-blue-hover: #1E66E5;
+  --accent-blue: #13EC5B;
+  --accent-blue-hover: #2C883C;
   --accent-red: #EF4444;
-  --accent-green: #10B981;
-  --accent-gold: #F59E0B;
+  --accent-green: #13EC5B;
+  --accent-gold: #FFC091;
   
-  --border-subtle: rgba(255, 255, 255, 0.1);
-  --border-focus: rgba(45, 124, 255, 0.5);
+  --primary: #13EC5B;
+  --secondary: #2C883C;
+  --tertiary: #FFC091;
+  --neutral: #6F7A6D;
+  
+  --border-subtle: #E8EBE9;
+  --border-focus: rgba(19, 236, 91, 0.5);
   
   --radius-sm: 4px;
   --radius-md: 8px;
@@ -271,30 +276,10 @@ input, textarea {
     text-decoration: none;
 }
 
-.Navbar_logoIcon__U9j9P {
-    width: 24px;
-    height: 24px;
-    background-color: var(--accent-blue);
-    border-radius: 4px;
-    position: relative;
-}
-
-.Navbar_logoIcon__U9j9P::after {
-    content: '';
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 12px;
-    height: 12px;
-    background-color: var(--text-primary);
-    border-radius: 2px;
-}
-
-.Navbar_logoText__iNK95 {
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: var(--text-primary);
-    letter-spacing: -0.02em;
+.Navbar_logoImage__FuL_b {
+    height: 144px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* Search Box */
@@ -388,7 +373,7 @@ input, textarea {
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color: var(--accent-blue);
+    background-color: var(--primary);
     color: white;
     font-size: 0.7rem;
     font-weight: bold;
@@ -420,17 +405,18 @@ input, textarea {
 }
 
 .Navbar_sellerButton__mnhbu {
-    background-color: #0b4d3c;
+    background-color: var(--secondary);
     color: white;
     padding: 8px 16px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.85rem;
-    transition: background-color 0.2s;
+    transition: all 0.2s;
 }
 .Navbar_sellerButton__mnhbu:hover {
-    background-color: #0a4032;
+    background-color: var(--primary);
+    color: #1A1A1A;
 }
 
 .Navbar_divider__D5c8m {
@@ -453,8 +439,8 @@ input, textarea {
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color: #10b981;
-    color: white;
+    background-color: var(--primary);
+    color: #1C2434;
     font-size: 0.7rem;
     font-weight: bold;
     width: 16px;
@@ -471,7 +457,7 @@ input, textarea {
 
 .Navbar_profileAvatarButton__ix75S {
     background: none;
-    border: 2px solid #10b981;
+    border: 2px solid var(--primary);
     padding: 2px;
     border-radius: 50%;
     cursor: pointer;
@@ -513,7 +499,7 @@ input, textarea {
 }
 
 .Navbar_dropdownEmail__2lXKw {
-    color: #10b981;
+    color: var(--secondary);
     font-size: 0.85rem;
     margin: 0;
 }
@@ -525,7 +511,7 @@ input, textarea {
 .Navbar_sectionTitle__bi7z7 {
     font-size: 0.75rem;
     font-weight: 700;
-    color: #34d399;
+    color: var(--primary);
     letter-spacing: 0.05em;
     margin: 0 0 12px 0;
 }
@@ -542,7 +528,7 @@ input, textarea {
 }
 
 .Navbar_dropdownItem__X2prQ:hover {
-    color: #10b981;
+    color: var(--primary);
 }
 
 .Navbar_signOutButton__5PLhl {

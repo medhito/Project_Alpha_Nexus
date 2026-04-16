@@ -120,8 +120,8 @@
 }
 
 .freshBadge {
-    background: #e6fced;
-    color: #0d8a39;
+    background: var(--border-subtle);
+    color: var(--secondary);
     font-size: 0.75rem;
     font-weight: 600;
     padding: 4px 8px;
@@ -315,7 +315,7 @@
 .profileBtn {
     width: 100%;
     padding: 10px;
-    background: #f0fdf4;
+    background: var(--border-subtle);
     color: var(--primary);
     border: none;
     border-radius: 8px;

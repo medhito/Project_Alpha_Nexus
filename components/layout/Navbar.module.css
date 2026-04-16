@@ -22,30 +22,10 @@
     text-decoration: none;
 }
 
-.logoIcon {
-    width: 24px;
-    height: 24px;
-    background-color: var(--accent-blue);
-    border-radius: 4px;
-    position: relative;
-}
-
-.logoIcon::after {
-    content: '';
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 12px;
-    height: 12px;
-    background-color: var(--text-primary);
-    border-radius: 2px;
-}
-
-.logoText {
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: var(--text-primary);
-    letter-spacing: -0.02em;
+.logoImage {
+    height: 144px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* Search Box */
@@ -139,7 +119,7 @@
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color: var(--accent-blue);
+    background-color: var(--primary);
     color: white;
     font-size: 0.7rem;
     font-weight: bold;
@@ -171,17 +151,18 @@
 }
 
 .sellerButton {
-    background-color: #0b4d3c;
+    background-color: var(--secondary);
     color: white;
     padding: 8px 16px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.85rem;
-    transition: background-color 0.2s;
+    transition: all 0.2s;
 }
 .sellerButton:hover {
-    background-color: #0a4032;
+    background-color: var(--primary);
+    color: #1A1A1A;
 }
 
 .divider {
@@ -204,8 +185,8 @@
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color: #10b981;
-    color: white;
+    background-color: var(--primary);
+    color: #1C2434;
     font-size: 0.7rem;
     font-weight: bold;
     width: 16px;
@@ -222,7 +203,7 @@
 
 .profileAvatarButton {
     background: none;
-    border: 2px solid #10b981;
+    border: 2px solid var(--primary);
     padding: 2px;
     border-radius: 50%;
     cursor: pointer;
@@ -264,7 +245,7 @@
 }
 
 .dropdownEmail {
-    color: #10b981;
+    color: var(--secondary);
     font-size: 0.85rem;
     margin: 0;
 }
@@ -276,7 +257,7 @@
 .sectionTitle {
     font-size: 0.75rem;
     font-weight: 700;
-    color: #34d399;
+    color: var(--primary);
     letter-spacing: 0.05em;
     margin: 0 0 12px 0;
 }
@@ -293,7 +274,7 @@
 }
 
 .dropdownItem:hover {
-    color: #10b981;
+    color: var(--primary);
 }
 
 .signOutButton {

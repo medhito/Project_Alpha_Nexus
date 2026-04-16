@@ -24,7 +24,7 @@
 
 .Hero_tagLabel__MJ8e7 {
     display: inline-block;
-    background-color: #0b4d3c;
+    background-color: var(--secondary);
     color: #ffffff;
     font-size: 0.70rem;
     font-weight: 700;
@@ -33,7 +33,7 @@
     padding: 6px 14px;
     border-radius: 20px;
     margin-bottom: 24px;
-    border: 1px solid #10b981;
+    border: 1px solid var(--primary);
 }
 
 .Hero_title__Ih5bQ {
@@ -53,8 +53,8 @@
 }
 
 .Hero_ctaButton__mExGW {
-    background-color: #10b981;
-    color: #0d4632;
+    background-color: var(--primary);
+    color: var(--text-primary);
     font-size: 0.95rem;
     font-weight: 700;
     padding: 14px 28px;
@@ -65,7 +65,7 @@
 }
 
 .Hero_ctaButton__mExGW:hover {
-    background-color: #0ea5e9; /* optional distinct hover color */
+    background-color: var(--secondary);
     color: white;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .Hero_dot_____uq.Hero_active__dCmEi {
-    background-color: #10b981;
+    background-color: var(--primary);
     width: 20px;
     border-radius: 4px;
 }
@@ -223,7 +223,7 @@
     align-items: center;
     gap: 4px;
     padding: 2px 8px;
-    border: 1px solid #10b981;
+    border: 1px solid var(--primary);
     border-radius: 12px;
     font-size: 0.65rem;
     font-weight: 700;
@@ -254,7 +254,7 @@
 
 .ProductCard_progressFill__qd2Um {
     height: 100%;
-    background-color: #10b981;
+    background-color: var(--primary);
     border-radius: var(--radius-full);
 }
 
@@ -311,7 +311,7 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    color: #10b981;
+    color: var(--secondary);
     font-weight: 700;
     font-size: 0.9rem;
     transition: opacity 0.2s;
@@ -334,21 +334,21 @@
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #10b981;
-    border: 1px solid #10b981;
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
     transition: all 0.2s;
     background: transparent;
     cursor: pointer;
 }
 
 .page_filterTab__OBYlK:hover {
-    background-color: #e6fced;
+    background-color: var(--bg-card);
 }
 
 .page_filterTab__OBYlK.page_activeTab__imdC0 {
-    background-color: #0b4d3c;
+    background-color: var(--secondary);
     color: white;
-    border-color: #0b4d3c;
+    border-color: var(--secondary);
 }
 
 .page_gridContainer__3JtBZ {
@@ -365,7 +365,7 @@
 }
 
 .page_loadMoreButton__j7cJk {
-    background-color: #0b4d3c;
+    background-color: var(--secondary);
     color: white;
     padding: 14px 32px;
     border-radius: 24px;

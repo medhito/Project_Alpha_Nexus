@@ -181,7 +181,7 @@
 .browseButton {
     display: inline-block;
     margin-top: 16px;
-    background-color: var(--accent-blue);
+    background-color: var(--primary);
     color: white;
     padding: 12px 24px;
     border-radius: var(--radius-md);

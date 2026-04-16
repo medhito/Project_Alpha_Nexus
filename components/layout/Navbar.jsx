@@ -36,8 +36,7 @@ export default function Navbar() {
       <div className={`container ${styles.navContainer}`}>
         {/* Logo */}
         <Link href="/" className={styles.logo}>
-          <div className={styles.logoIcon}></div>
-          <span className={styles.logoText}>LocalMarket</span>
+          <img src="/logo.png" alt="Nexus Logo" className={styles.logoImage} />
         </Link>
 
         {/* Search Bar */}
